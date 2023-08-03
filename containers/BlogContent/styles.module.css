@@ -1,0 +1,34 @@
+.postWrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blogTitle {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.postDetails {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  opacity: 0.9;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.readLength,
+.publishDate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postContent {
+  align-items: center;
+  margin-top: 5rem;
+}

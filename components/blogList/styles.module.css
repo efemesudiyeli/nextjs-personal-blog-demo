@@ -1,0 +1,65 @@
+.blogSection {
+  overflow: hidden;
+}
+
+.postWrapper {
+  /* card */
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .postWrapper {
+    width: auto;
+  }
+
+  .titleSection {
+    font-size: 12px;
+  }
+}
+
+.sections {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 0.5rem;
+}
+
+.img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+.categorySection {
+  opacity: 0.9;
+
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.titleSection {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+.detailSection {
+  display: flex;
+
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 2rem;
+  opacity: 0.8;
+  height: 100%;
+}
+
+.readLength,
+.date,
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
