@@ -2,8 +2,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+const postDirectory = () => {
+  return path.join(process.cwd(), `/posts`);
+};
+
 export function getAllPostSlugs() {
-  const fileNames = fs.readdirSync(`./posts`);
+  path.join(process.cwd(), `/posts/`);
+  const fileNames = fs.readdirSync(postDirectory());
 
   return fileNames.map((fileName) => {
     return {
@@ -16,7 +21,7 @@ export function getAllPostSlugs() {
 
 export function getPostData(slug) {
   const actualSlug = slug.replace(".md", "");
-  const fullPath = path.join(`./posts`, `${actualSlug}.md`);
+  const fullPath = path.join(postDirectory(), `${actualSlug}.md`);
   // Dosya yolunu kontrol et ve eğer bahsedilen dosya yok ise devam etme.
   if (!fs.existsSync(fullPath)) {
     console.error(`Dosya bulunamadı: ${fullPath}`);
