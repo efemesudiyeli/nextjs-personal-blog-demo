@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .blogTitle {
@@ -31,4 +32,9 @@
 .postContent {
   align-items: center;
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 42rem;
 }
