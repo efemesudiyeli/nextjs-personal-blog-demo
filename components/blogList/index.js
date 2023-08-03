@@ -18,10 +18,18 @@ export default function BlogList() {
         <h2 className="place-self-start text-6xl">Bloglar</h2>
         <div></div>
         <div></div>
-        {postDataList.map((post) => (
-          <Link className={styles.postWrapper} href={`blog/${post.slug}`}>
+        {postDataList.map((post, index) => (
+          <Link
+            key={index}
+            className={styles.postWrapper}
+            href={`blog/${post.slug}`}
+          >
             <div>
-              <Image className={styles.img} src={stockPhoto}></Image>
+              <Image
+                alt={post.postData.data.title}
+                className={styles.img}
+                src={stockPhoto}
+              ></Image>
             </div>
             <div className={styles.sections}>
               <h4 className={styles.categorySection}>
