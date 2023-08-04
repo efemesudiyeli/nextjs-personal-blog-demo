@@ -1,5 +1,13 @@
-.mark {
+.wrapper {
   background: none;
-
   font-size: 1.2rem;
+}
+
+.h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.p {
+  font-size: 2rem;
 }

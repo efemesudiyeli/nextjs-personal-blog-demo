@@ -1,5 +1,8 @@
 .blogSection {
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .postWrapper {

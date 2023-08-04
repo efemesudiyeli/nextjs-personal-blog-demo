@@ -4,10 +4,9 @@ import Hero from "@/components/hero";
 
 export default function HomeContainer() {
   return (
-    <main
-      className={`flex flex-col justify-center items-center ${styles.main}`}
-    >
+    <main className={`${styles.main}`}>
       <Hero />
+
       <BlogList />
     </main>
   );

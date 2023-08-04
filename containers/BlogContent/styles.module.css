@@ -10,6 +10,7 @@
   font-size: 5rem;
   font-weight: 900;
   text-align: center;
+  width: 100vw;
 }
 
 .postDetails {
@@ -37,4 +38,22 @@
   justify-content: center;
   text-align: start;
   width: 42rem;
+}
+
+/* Phone */
+@media screen and (max-width: 600px) {
+  .blogTitle {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .postDetails {
+    margin-top: 1rem;
+  }
+
+  .postContent {
+    width: 100vw;
+    text-align: start;
+    padding: 0 2rem;
+  }
 }
